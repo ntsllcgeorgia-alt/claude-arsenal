@@ -1,0 +1,12 @@
+# Force LF line endings on shell scripts — they break with CRLF on Mac/Linux
+*.sh text eol=lf
+
+# Python scripts also stable with LF cross-platform
+*.py text eol=lf
+
+# Markdown and JSON — let git auto-handle but prefer LF
+*.md text eol=lf
+*.json text eol=lf
+
+# PowerShell — CRLF on Windows is fine, but keep LF in repo for consistency
+*.ps1 text eol=lf

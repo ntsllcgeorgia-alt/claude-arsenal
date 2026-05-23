@@ -1,0 +1,51 @@
+{
+  "_comment": "Rename this file to settings.json after filling in your API keys. Delete this _comment line when you do.",
+  "_instructions": "Each MCP server below is OPTIONAL. Delete the entire block for any service you don't use. See docs/05-mcp-setup.md for sign-up links.",
+
+  "enabledPlugins": {
+    "marketing@knowledge-work-plugins": true,
+    "productivity@knowledge-work-plugins": true,
+    "frontend-design@claude-plugins-official": true
+  },
+
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
+
+  "effortLevel": "high",
+  "autoUpdatesChannel": "latest",
+
+  "mcpServers": {
+    "_late_comment": "Late = post & schedule social media. Sign up at https://getlate.dev",
+    "late": {
+      "command": "uvx",
+      "args": ["--from", "late-sdk[mcp]", "late-mcp"],
+      "env": {
+        "LATE_API_KEY": "sk_YOUR_LATE_API_KEY_HERE"
+      }
+    },
+
+    "_github_comment": "GitHub = read/write your repos. Get a PAT at https://github.com/settings/tokens",
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "github_pat_YOUR_GITHUB_PAT_HERE"
+      }
+    },
+
+    "_firecrawl_comment": "Firecrawl = scrape websites cleanly. Sign up at https://firecrawl.dev",
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-YOUR_FIRECRAWL_KEY_HERE"
+      }
+    }
+  }
+}

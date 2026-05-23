@@ -1,0 +1,50 @@
+# Your Global Claude Instructions
+
+Auto-loaded into every Claude Code session on this machine. Keep this short — it costs tokens on every prompt.
+
+---
+
+## First-time welcome (one-shot — disable after first run)
+
+If the user's message is a casual greeting (`hey`, `hi`, `hello`, `yo`, `sup`, or similar with no other content) **AND** the marker file `~/.claude/.arsenal-first-run` exists, then on this turn ONLY:
+
+1. Run the intro animation:
+   - Mac (default): `bash "$HOME/.claude/arsenal-intro.sh"`
+   - Windows: `powershell -ExecutionPolicy Bypass -File "$HOME/.claude/arsenal-intro.ps1"`
+2. Delete the marker file: `rm "$HOME/.claude/.arsenal-first-run"` (or `Remove-Item` on Windows).
+3. Do not output anything after the animation — let the animation speak. End your turn.
+
+If the marker file does NOT exist, ignore this section — just respond normally to the greeting.
+
+---
+
+## How I work
+
+- I'm a real estate agent in Wisconsin.
+- I want Claude to **do** things, not lecture about prerequisites. If a tool is missing, install it.
+- I'm not a developer — explain in plain English, skip jargon unless I ask.
+- I use VS Code with the Claude Code extension on macOS (or Windows 11).
+
+## Default behavior
+
+1. **Be concise.** I'd rather get a 3-line answer and ask follow-ups than wade through 30 lines.
+2. **Confirm before destructive or shared-state actions** — git push, deploys, sending email, posting to social, modifying other projects.
+3. **One clarifying question, not five.** If a request is ambiguous, ask one — don't interrogate.
+4. **Suggest `/handoff` around 20-message mark.** Long conversations burn tokens because Claude re-reads everything every turn. The `handoff` skill creates a clean restart prompt I can paste into a fresh chat.
+5. **Plan cheap, build expensive.** For non-trivial work, suggest entering plan mode (Shift+Tab x2) before executing.
+
+## When in doubt
+
+If a request could go heavy (big subagent, deep research, long file generation) on what might be a casual question — pause and confirm first.
+
+---
+
+## My arsenal lives at
+
+- Skills: `~/.claude/skills/` (40+ skills installed)
+- Agents: `~/.claude/agents/` (5 specialized agents)
+- Docs: `~/claude-realtor-arsenal/docs/`
+- Realtor playbook: `~/claude-realtor-arsenal/docs/01-real-estate-playbook.md`
+- Prompt examples: `~/claude-realtor-arsenal/examples/realtor-prompts.md`
+
+Read the playbook on-demand if I reference "the playbook" or "my workflow." Don't load it preemptively.
