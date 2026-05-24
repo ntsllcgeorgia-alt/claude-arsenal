@@ -23,23 +23,33 @@ It does:
 
 ---
 
-## Quick start (Mac — 60 seconds)
+## Quick start — 60 seconds
 
 You need three things installed before you start:
 
-1. **VS Code for Mac** — https://code.visualstudio.com/download
+1. **VS Code** — https://code.visualstudio.com/download
 2. **Claude Code extension** — install from the VS Code marketplace, then sign in with your Anthropic account
-3. **Xcode Command Line Tools** — ships `git`. If missing, the bootstrap will tell you. (Or run `xcode-select --install` now to get ahead of it — 5-min download.)
+3. **Git** — comes pre-installed on Mac (via Xcode Command Line Tools). On Windows, the bootstrap will auto-install via winget.
 
-Then open **Terminal** (Cmd+Space, type `terminal`, hit Enter) and paste this single line:
+### Mac
+
+Open **Terminal** (Cmd+Space → `terminal`) and paste:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ntsllcgeorgia-alt/claude-arsenal/main/bootstrap/bootstrap.sh | bash
 ```
 
+### Windows
+
+Open **PowerShell** (Win+R → `powershell`) and paste:
+
+```powershell
+iex (iwr "https://raw.githubusercontent.com/ntsllcgeorgia-alt/claude-arsenal/main/bootstrap/bootstrap.ps1").Content
+```
+
 That's it. The script clones the repo, copies everything to the right place, and arms the welcome animation.
 
-**Now open VS Code, launch Claude Code (Cmd+Shift+P → "Claude: Open chat"), and type:**
+**Now open VS Code, launch Claude Code (Cmd+Shift+P on Mac / Ctrl+Shift+P on Windows → "Claude: Open chat"), and type:**
 
 ```
 hey
@@ -66,18 +76,6 @@ Claude detects that this is your first launch. It runs an animated boot sequence
 ```
 
 After that first run, `hey` just behaves like a normal greeting. The animation is a one-time deal.
-
----
-
-## Quick start (Windows — alternate)
-
-Open PowerShell (Win+R, type `powershell`, hit Enter) and paste:
-
-```powershell
-iex (iwr "https://raw.githubusercontent.com/ntsllcgeorgia-alt/claude-arsenal/main/bootstrap/bootstrap.ps1").Content
-```
-
-Same flow as Mac — clone, install, type `hey`, animation runs.
 
 ---
 
