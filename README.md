@@ -8,7 +8,7 @@
 
 You're a real estate agent in Wisconsin. You have one head, two hands, and ~14 hours a day. The most successful agents in the country have all of that **plus a marketing department, a video team, a social media manager, a copywriter, an admin, and a designer.**
 
-This repo is that team. Forty-one specialized skills, five autonomous agents, three Anthropic plugins — all loaded into Claude Code on your machine. You type what you want; the right tool fires. No menus. No clicking. No "let me circle back."
+This repo is that team. Forty-four specialized skills, five autonomous agents, three Anthropic plugins — all loaded into Claude Code on your machine. You type what you want; the right tool fires. No menus. No clicking. No "let me circle back."
 
 It does:
 
@@ -66,7 +66,7 @@ Claude detects that this is your first launch. It runs an animated boot sequence
   ║                                                          ║
   ║   ARSENAL ONLINE                                         ║
   ║                                                          ║
-  ║   ▸  41 skills loaded                                    ║
+  ║   ▸  44 skills loaded                                    ║
   ║   ▸   5 agents armed                                     ║
   ║   ▸   3 plugins enabled                                  ║
   ║                                                          ║
@@ -81,7 +81,7 @@ After that first run, `hey` just behaves like a normal greeting. The animation i
 
 ## What's in the box
 
-### 41 skills (grouped by what they DO for you)
+### 44 skills (grouped by what they DO for you)
 
 **🎯 Marketing brain**
 | Skill | What it does in plain English |

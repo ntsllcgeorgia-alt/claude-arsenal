@@ -75,6 +75,9 @@ Three ways:
 | `token-check` | Counts Claude tokens + estimates cost across Sonnet/Opus/Haiku. |
 | `find-skills` | Searches the registry for installable skills you don't have yet. |
 | `skill-creator` | Builds new custom skills (you tell it the spec). |
+| `project-init` | Scaffolds CLAUDE.md + project_specs.md for any new project folder. |
+| `quality-gate` | Scores any deliverable 1-10 before you ship + names exact fixes. |
+| `clone-design` | Rebuilds a website's visual pattern from URL or screenshot. |
 
 ## Documents
 
